@@ -1,7 +1,197 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// body {
+//   padding-bottom: 50px;
+// }
+.search-form {
+    padding: 20px;
+    background-color: #852f9b;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+  }
+  
+  .button {
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #852f9b;
+    background-color: #e9e4eb;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .button:hover, .button:focus {
+    color: #e9e4eb;
+    background-color: #852f9b;
+  }
+  
+  .load-more {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #852f9b;
+    background-color: #e9e4eb;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .load-more:hover, .load-more:focus {
+    color: #e9e4eb;
+    background-color: #852f9b;
+  }
+  
+  .sub {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: #3965c4;
+    cursor: pointer;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: calc(100vw - 80px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .photo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    border-radius: 5px;
+    // box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    //   0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    box-shadow: 5px 5px 3px 1px rgba(14, 53, 182, 0.3);
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .info-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .gallery__item {
+    border-radius: 5px;
+  }
+  b {
+    text-align: center;
+    color: black;
+  }
+  .is-hidden {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+  }
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+  .is-hidden {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .load-more {
+  display: block;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: rgb(204, 80, 8);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
+
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #efefef;
+  color: #212121;
+}
+
+.load-more:active {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+
+.load-more:disabled {
+  opacity: 0.7;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.loader {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 7px solid cadetblue;
+  border-radius: 50%;
+  border-top-color: rgb(16, 16, 119);
+  animation: 2000ms spin infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+    ottom-color: rgb(16, 16, 119);
+  }
+}
